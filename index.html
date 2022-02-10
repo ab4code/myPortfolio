@@ -15,7 +15,10 @@
 <body>
     <header id="header">
         <nav class="navOpen">
-            <img src="./images/assets/hero.png" alt="Logo">
+            <a href="index.html">
+                <img src="./images/assets/hero.png" alt="Logo">
+                <!-- <p>Apedo</p> -->
+            </a>
             <div class="openNav">
                 <ion-icon name="menu-outline"></ion-icon>
                 <p class="closeNav">
@@ -23,7 +26,7 @@
                 </p>
             </div>
             <ul class="navMenu">
-                <li><a href="#"><span class="navList">01.</span> About</a></li>
+                <li><a href="#about"><span class="navList">01.</span> About</a></li>
                 <li><a href="#"><span class="navList">02.</span> Experience</a></li>
                 <li><a href="#"><span class="navList">03.</span> Work</a></li>
                 <li><a href="#"><span class="navList">04.</span> Contact Me</a></li>
@@ -31,6 +34,7 @@
             </ul>
         </nav>
     </header>
+    <!-- landing section -->
     <section class="landing-page">
         <div class="landing-text">
             <p class="intro">Hi, My name is</p>
@@ -58,6 +62,42 @@
             <a href="https://www.linkedin.com/in/apedo-abraham-aa12b821a/" target="_blank">
                 <ion-icon name="logo-linkedin" class="icon"></ion-icon>
             </a>
+            <a href="mailto:amjustabraham@gmail.com" target="_blank">
+                <ion-icon name="mail-unread-outline" class="icon"></ion-icon>
+            </a>
+        </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="about">
+        <p class="page-heading"><span>01.</span> About Me</p>
+        <div class="about-banner">
+            <div class="about-text">
+                <p class="title">Graphic Designer & Web Developer</p>
+                <p class="summary" oncontextmenu="return false"> 
+                    Hello! My name is Abraham and I enjoy creating 
+                    things that live on the internet. I'm creative and 
+                    amazing frontend developer who build awesome projects 
+                    with my amazing skills. I Love anything that has to 
+                    do with user interface and user experience.
+                </p>
+                <P class="subtitle">
+                    Here are a few technologies I’ve been working with recently:
+                </P>
+                <div class="tools-made-use">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRPIT</li>
+                    </ul>
+                    <ul>
+                        <li>SCSS</li>
+                        <li>BOOTSTRAP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="./images/hero/hero.jpeg"  alt="Apedo.jpg">
+            </div>
         </div>
     </section>
     <!-- linking script sheet -->
