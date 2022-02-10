@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: var(--heading-font);
 }
 
 :root{
@@ -52,6 +52,11 @@ nav ul .resume-btn{
     border: 2px solid blue;
 }
 
+nav ul .resume-btn:hover{
+    transition: .4s all;
+    background: rgba(0, 0, 255, 0.137);
+}
+
 nav a{
     text-decoration: none;
 }
@@ -59,4 +64,66 @@ nav a{
 nav a:hover{
     transition: .5s all;
     color: blue;
+}
+
+/* landing section */
+
+.landing-page{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-page .social-links{
+    display: flex;
+    font-size: 40px;
+    text-decoration: none;
+    flex-direction: column;
+    color: blue;
+}
+
+.landing-page .social-links a{
+    color: gold;
+}
+
+.landing-text{
+    max-width: 850px;
+}
+
+.landing-text .intro{
+    font-size: 25px;
+}
+
+.landing-text .title{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.landing-text .subtitle{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.landing-text .about-btn{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.landing-text .about-btn .arrow-down{
+    position: relative;
+    margin-left: 5px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 5px;
+    }
 }
