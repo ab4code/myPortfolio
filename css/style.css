@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DM+Serif+Display&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -48,10 +50,15 @@ nav .openNav{
     display: none;
 }
 
+nav p{
+    font-size: 50px;
+    font-family: 'Akaya Telivigala';
+}
+/* 
 nav img{
     width: 100px;
     margin-top: 20px;
-}
+} */
 
 nav ul li{
     display: inline-block;
@@ -59,19 +66,20 @@ nav ul li{
 }
 
 nav ul .navList{
-    color: blue;
+    color: green;
     font-weight: 500;
 }
 
 nav ul .resume-btn{
     padding: 10px 30px;
-    color: blue;
-    border: 2px solid blue;
+    color: green;
+    border: 2px solid green;
 }
 
 nav ul .resume-btn:hover{
     transition: .4s all;
-    background: rgba(0, 0, 255, 0.137);
+    background: lightgreen;
+    color: white;
 }
 
 nav a{
@@ -80,7 +88,7 @@ nav a{
 
 nav a:hover{
     transition: .5s all;
-    color: blue;
+    color: green;
 }
 /* landing section */
 .landing-page{
@@ -97,11 +105,11 @@ nav a:hover{
     font-size: 40px;
     text-decoration: none;
     flex-direction: column;
-    color: blue;
+    /* color: green; */
 }
 
 .landing-page .social-links a{
-    color: gold;
+    color: green;
 }
 
 .landing-text{
@@ -125,8 +133,8 @@ nav a:hover{
 .landing-text .about-btn{
     text-decoration: none;
     padding: 10px 30px;
-    color: blue;
-    border: 2px solid blue;
+    color: green;
+    border: 2px solid green;
 }
 
 .landing-text .about-btn .arrow-down{
@@ -155,8 +163,8 @@ nav a:hover{
     font-size: 40px;
 }
 
-.about .page-heading span{
-    color: blue;
+ span{
+    color: green;
 }
 
 .about .about-banner{
@@ -335,10 +343,14 @@ nav a:hover{
     height: 100vh
 }
 
+.portfolio .title{
+    text-align: center;
+    font-size: 40px;
+}
+
 .portfolio-banner{
-    border: 1px solid blue;
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     padding: 30px;
     justify-content: center;
@@ -393,4 +405,51 @@ nav a:hover{
 .clone-text ul li{
     display: inline-block;
     padding: 5px;
+}
+/* contact section */
+.contact{
+    width: 100%;
+    height: 50vh;
+}
+
+.contact-banner .title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact-banner .description{
+    margin: 15px 300px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-banner .contact-btn{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-banner .contact-btn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: green;
+    border: 2px solid green;
+}
+
+.contact-banner .contact-btn a:hover{
+    transition: .4s all;
+    background: lightgreen;
+    color: white;
+}
+/* footer section */
+footer{
+    width: 100%;
+    height: 40vh;
+    border: 1px solid green
+}
+
+footer p{
+    font-size: 20px;
+    margin-top: 220px;
+    text-align: center;
 }
